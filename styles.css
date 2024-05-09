@@ -1,0 +1,146 @@
+body {
+    background-image: url(./assets/website_background.jpeg);
+    background-repeat:no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    backdrop-filter: 5px;
+}
+
+#heading{
+    /*border: 5px solid blue;*/
+    margin: 5vh;
+    font-family: "Special Elite", 'Times New Roman', Times, serif;
+}
+
+#zine_background{
+    /*border: 5px solid orange;*/
+    margin: 5vh;
+}
+
+#zine_background .collapsible{
+    font-family: "Special Elite", 'Times New Roman', Times, serif;
+}
+
+#zine_background p{
+    font-family: "Cutive Mono", 'Times New Roman', Times, serif;
+}
+
+#zine_background ul{
+    font-family: "Cutive Mono", 'Times New Roman', Times, serif;
+}
+
+#container{
+    /*border: 5px solid purple;*/
+    position: relative;
+    overflow: auto;
+    margin: 5vh;
+}
+
+#libraries_distros{
+    /*border: 5px solid yellow;*/
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 5vh 15vh;
+}
+
+#libraries_distros h3 {
+    font-family: "Special Elite", 'Times New Roman', Times, serif;
+}
+
+#libraries_distros h1 {
+    font-family: "Special Elite", 'Times New Roman', Times, serif;
+}
+
+#libraries_distros p {
+    font-family: "Cutive Mono", 'Times New Roman', Times, serif;
+}
+
+#libraries_distros ul {
+    font-family: "Cutive Mono", 'Times New Roman', Times, serif;
+}
+
+.library{
+    /*border: 5px solid yellowgreen;*/
+    width: auto;
+    max-width: 20%;
+    margin: 0 auto;
+}
+
+.library img{
+   /*border: 5px solid pink;*/
+    max-width: 100%;
+    height: auto;
+    cursor: url(./assets/pen_cursor.png), auto;
+}
+
+/*********************/
+
+.popup {
+    display: none;
+    position: fixed;
+    z-index: auto; /*this determines stack level of the popup. z-index of 1 means to display popup on top of everything else. just set it to auto since there won't be another popup within the popup.*/
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(255,255,153,0.75);
+}
+  
+.popup-content {
+    /*border: 5px solid green;*/
+    background-color: #fefefe;
+    margin: 5% auto;
+    padding: 5vh;
+    width: 80%;
+}
+
+.popup-content iframe {
+    width: 100%;
+    max-width: 100%;
+    height: 500px;
+    display: block;
+    margin: 0 auto; /*centers the iframe in the middle horizontally*/
+}
+  
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover, .close:focus {
+    color: red;
+    text-decoration: none;
+    cursor: url(./assets/pen_cursor.png), auto;
+}
+
+/*********************/
+
+/* Style the button that is used to open and close the collapsible content */
+.collapsible {
+    background-color: rgba(255,255,255,0);
+    color: black;
+    cursor: url(./assets/pen_cursor.png), auto;
+    /*padding: 18px;*/
+    width: 100%;
+    border: none;
+    text-align: center;
+    outline: none;
+}
+  
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active, .collapsible:hover {
+    background-color: whitesmoke;
+}
+  
+/* Style the collapsible content. Note: hidden by default */
+.content {
+    padding: 0 18px;
+    display: none;
+    overflow: hidden;
+    background-color: rgba(255,255,255,0.5);
+}
